@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">IT Center Yangiariq</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="#">Tizimdan-chiqish</a>
+          </div>
+        </div>
+    </header>
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3 sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./dashboard.html">
+                    <span data-feather="home" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-layers"></i>
+                    </div>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Student.html">
+                    <span data-feather="file" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    O'quvchilar
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./teacher.html">
+                    <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-microsoft-teams"></i>
+                    </div>
+                    O'qtuvchilar
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./group.html">
+                    <span data-feather="users" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-collection"></i>
+                    </div>
+                    Guruhlar
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./payment.html">
+                    <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-credit-card-2-front"></i>
+                    </div>
+                    To'lovlar
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./statistic.html">
+                    <span data-feather="layers" class="align-text-bottom"></span>
+                    <div style="display:inline-block;">
+                      <i class="bi bi-speedometer"></i>
+                    </div>
+                    Statistika
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./settings.html">
+                      <span data-feather="layers" class="align-text-bottom"></span>
+                      <div class="tra" style="display:inline-block;">
+                        <i class="bi bi-gear"></i>
+                      </div>
+                      Sozlamalar
+                    </a>
+                </li>
+              </ul>
+      
+              
+            </div>
+          </nav>
+      
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">O'qtuvchilar</h1>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-plus"></i> O'qtuvchi qo'shish</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">O'quvchi qo'shish</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="full name" class="form-label">FIO</label>
+                            <input type="text" class="form-control" id="full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="login" class="form-label">Login</label>
+                            <input type="tex" class="form-control" id="login">
+                        </div>
+                        <div class="mb-3">
+                            <label for="parol" class="form-label">Parol</label>
+                            <input type="text" class="form-control" id="parol">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiqish</button>
+                    <button type="button" class="btn btn-primary">Saqlash</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">T/r</th>
+                  <th scope="col">FIO</th>
+                  <th scope="col">Telefon raqam</th>
+                  <th scope="col">Passport malumoti</th>
+                  <th rowspan="3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Rahimberganov Javohir</td>
+                  <td>+9986654666</td>
+                  <td>ejhby43r734br48</td>
+                  <td>                  
+                    <div class="colorfull">
+                      <a href="./studentInfo.html" class="btn btn-outline-success"><i class="bi bi-eye"></i></a>
+                      <button class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-outline-danger"><i class="bi bi-trash3"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Rahimberganov Javohir</td>
+                  <td>+9986654666</td>
+                  <td>ejhby43r734br48</td>
+                  <td>                  
+                    <div class="colorfull">
+                      <a href="./studentInfo.html" class="btn btn-outline-success"><i class="bi bi-eye"></i></a>
+                      <button class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-outline-danger"><i class="bi bi-trash3"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Rahimberganov Javohir</td>
+                  <td>+9986654666</td>
+                  <td>ejhby43r734br48</td>
+                  <td>                  
+                    <div class="colorfull">
+                      <a href="./studentInfo.html" class="btn btn-outline-success"><i class="bi bi-eye"></i></a>
+                      <button class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-outline-danger"><i class="bi bi-trash3"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            
+          </main>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
